@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('pull-from-github-build') {
             steps {
-                batt "npm install"
+                bat "npm install"
             }
 			post {
 				failure {
